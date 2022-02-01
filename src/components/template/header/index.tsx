@@ -22,7 +22,6 @@ const Header: React.FC<Props> = ({ switchTheme }) => {
 
                     <div>
                             
-                        
                         <AdjustBio />
 
                     </div>
