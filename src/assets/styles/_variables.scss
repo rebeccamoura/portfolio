@@ -1,0 +1,17 @@
+@import '../styles/fonts';
+
+$font-family: 'Poppins', sans-serif;
+
+:root {
+    --pri: #FCBA40;
+    --onpri: #005886;
+    --bg: #F6F6F6;
+    --onbg: #333333;
+}
+
+:root .dark-theme {
+    --pri: #005886;
+    --onpri: #FCBA40;
+    --bg: #333333;
+    --onbg: #F6F6F6;
+}
