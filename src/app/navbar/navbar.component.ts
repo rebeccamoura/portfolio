@@ -26,10 +26,14 @@ export class NavbarComponent implements OnInit {
   changeMode(event: any) {
     if (event.target.value === '1') {
       document.body.classList.add('dark-theme')
-      console.log('um')
       return;
     }
 
     document.body.classList.remove('dark-theme')
+  }
+
+  menuToggle() {
+    document.querySelector('.list-wrapper')?.classList.toggle('display-none')
+    document.querySelector('.menu-toggle')?.classList.toggle('open')
   }
 }
