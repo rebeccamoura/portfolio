@@ -33,7 +33,7 @@ export class NavbarComponent implements OnInit {
   }
 
   menuToggle() {
-    document.querySelector('.list-wrapper')?.classList.toggle('display-none')
     document.querySelector('.menu-toggle')?.classList.toggle('open')
+    document.querySelector('.navbar-wrapper')?.classList.toggle('on')
   }
 }
