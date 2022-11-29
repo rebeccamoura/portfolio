@@ -7,6 +7,7 @@ $font-family: 'Poppins', sans-serif;
     --onpri: #005886;
     --bg: #F6F6F6;
     --onbg: #333333;
+    --onbg-variant: grey;
 }
 
 :root .dark-theme {
@@ -14,4 +15,5 @@ $font-family: 'Poppins', sans-serif;
     --onpri: #FCBA40;
     --bg: #333333;
     --onbg: #F6F6F6;
+    --onbg-variant: lightgrey;
 }

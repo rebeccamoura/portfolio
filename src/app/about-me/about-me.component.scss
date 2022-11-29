@@ -1,0 +1,36 @@
+@import '../../assets/styles/variables';
+
+.about-me-wrapper {
+    width: 100%;
+    background-color: lightblue;
+    max-width: 500px;
+
+    .title {
+        font-weight: normal;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: var(--onbg-variant);
+        text-align: center;
+    }
+
+    .radio-input-wrapper {
+        display: flex;
+        flex-direction: column;
+
+        .inputs, .labels {
+            align-self: center;
+        }
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .about-me-wrapper {
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .about-me-wrapper {
+        max-width: 90%;
+    }
+}
