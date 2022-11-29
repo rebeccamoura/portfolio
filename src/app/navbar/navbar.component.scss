@@ -130,7 +130,7 @@
             }
 
             .navbar {
-                opacity: 0;
+                display: none;
             }
 
             &.on {
@@ -179,6 +179,10 @@
             }
         }
     }
+}
+
+.d-block {
+    display: block !important;
 }
 
 // .navbar {    
