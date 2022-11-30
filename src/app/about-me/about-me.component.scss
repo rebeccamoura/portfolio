@@ -1,0 +1,82 @@
+@import '../../assets/styles/variables';
+
+.about-me-wrapper {
+    width: 100%;
+    max-width: 600px;
+
+    .title, .labels label {
+        font-weight: normal;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: var(--onbg-variant);
+        text-align: center;
+        font-size: 1.3rem;
+    }
+
+    .radio-input-wrapper {
+        display: flex;
+        flex-direction: column;
+
+        .inputs, .labels {
+            align-self: center;
+            width: 100%;
+            max-width: 60%;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .labels {
+            max-width: 70%;
+        }
+
+        .inputs {
+            input {
+                appearance: none;
+                width: 20px;
+                height: 20px;
+                border: 3px solid var(--pri);
+                border-radius: 50%;
+                cursor: pointer;
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    height: 10px;
+                    width: 10px;
+                    background-color: var(--pri);
+                    border-radius: 50%;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    opacity: 0;
+                }
+
+                &:checked::before {
+                    opacity: 1;
+                }
+            }
+        }    
+    }
+
+    .text-wrapper {
+        padding-top: 40px;
+
+        .text {
+            font-size: 1.8rem;
+        }
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .about-me-wrapper {
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .about-me-wrapper {
+        max-width: 90%;
+    }
+}
