@@ -1,17 +1,17 @@
 <div class="about-me">
     <div class="about-me-wrapper">
-        <h2 class="title">O que você quer saber sobre mim?</h2>
+        <h2 class="title">Ajuste o tamanho do texto</h2>
 
         <div class="radio-input-wrapper">
             <div class="inputs">
-                <input type="radio" name="bioLength" id="small" data-key="0">
-                <input type="radio" name="bioLength" id="medium" data-key="1">
-                <input type="radio" name="bioLength" id="big" data-key="2">
+                <input type="radio" name="bioLength" id="small" data-key="0" checked (click)="changeTextSize($event)">
+                <input type="radio" name="bioLength" id="medium" data-key="1" (click)="changeTextSize($event)">
+                <input type="radio" name="bioLength" id="big" data-key="2" (click)="changeTextSize($event)">
             </div>
 
             <div class="labels">
-                <label for="bioLength">Pouco</label>
-                <label for="bioLength">Muito</label>
+                <label for="bioLength">Menor</label>
+                <label for="bioLength">Maior</label>
             </div>
         </div>
 
