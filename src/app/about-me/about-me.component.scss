@@ -81,3 +81,9 @@
         max-width: 90%;
     }
 }
+
+@media screen and (max-width: 502px) {
+    .about-me-wrapper {
+        margin: 20px auto 0;
+    }
+}
