@@ -43,47 +43,49 @@
     </div>
 </nav> -->
 
-<div class="container">
-    <div class="navbar-wrapper">
-        <div class="menu-toggle" (click)="menuToggle()">
-            <div class="one"></div>
-            <div class="two"></div>
-            <div class="three"></div>
+<div class="navbar">
+    <div class="container">
+        <div class="navbar-wrapper">
+            <div class="menu-toggle" (click)="menuToggle()">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
+            <nav class="list-wrapper">
+                <ul class="list">
+                    <li class="item">
+                        <label for="theme-switcher" class="icon light-mode">
+                            <span class="material-symbols-outlined">
+                                light_mode
+                            </span>
+                        </label>
+    
+                        <input type="range" name="theme-switcher" min="0" max="1" (click)="changeMode($event)" value="0">
+    
+                        <label for="theme-switcher" class="icon dark-mode">
+                            <span class="material-symbols-outlined">
+                                dark_mode
+                            </span>
+                        </label>
+                    </li>
+    
+                    <div class="center">
+                        <li class="item">
+                            <a routerLink="/" class="link active" (click)="activeMenu($event)">Página inicial</a>
+                        </li>
+                        <li class="item">
+                            <a routerLink="/skills" class="link" (click)="activeMenu($event)">Habilidades</a>
+                        </li>
+                        <li class="item">
+                            <a routerLink="/projects" class="link" (click)="activeMenu($event)">Projetos</a>
+                        </li>
+                    </div>
+    
+                    <li class="item">
+                        <a routerLink="/contact" class="btn">Vamos conversar</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <nav class="navbar">
-            <ul class="list">
-                <li class="item">
-                    <label for="theme-switcher" class="icon light-mode">
-                        <span class="material-symbols-outlined">
-                            light_mode
-                        </span>
-                    </label>
-        
-                    <input type="range" name="theme-switcher" min="0" max="1" (click)="changeMode($event)" value="0">
-        
-                    <label for="theme-switcher" class="icon dark-mode">
-                        <span class="material-symbols-outlined">
-                            dark_mode
-                        </span>
-                    </label>
-                </li>
-        
-                <div class="center">
-                    <li class="item">
-                        <a routerLink="/" class="link active" (click)="activeMenu($event)">Página inicial</a>
-                    </li>
-                    <li class="item">
-                        <a routerLink="/skills" class="link" (click)="activeMenu($event)">Habilidades</a>
-                    </li>
-                    <li class="item">
-                        <a routerLink="/projects" class="link" (click)="activeMenu($event)">Projetos</a>
-                    </li>
-                </div>
-        
-                <li class="item">
-                    <a routerLink="/contact" class="btn">Vamos conversar</a>
-                </li>
-            </ul>
-        </nav>
     </div>
 </div>

@@ -35,6 +35,6 @@ export class NavbarComponent implements OnInit {
   menuToggle() {
     document.querySelector('.menu-toggle')?.classList.toggle('open')
     document.querySelector('.navbar-wrapper')?.classList.toggle('on')
-    document.querySelector('.navbar')?.classList.toggle('d-block')
+    document.querySelector('.list-wrapper')?.classList.toggle('d-block')
   }
 }
