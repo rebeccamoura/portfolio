@@ -21,7 +21,7 @@
                     background-color: var(--pri);
                     z-index: -999;
                     position: absolute;
-                    top: 179px;
+                    top: 210px;
                     left: 0;
                 }
             }
@@ -32,6 +32,38 @@
 
                 img {
                     filter: drop-shadow(20px 0px var(--pri));
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 921px) {
+    .home {
+        .container {
+            padding-top: 150px;
+
+            .home-header {
+                .images {
+                    left: 60%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1155px) {
+    .home {
+        .container {
+            .home-header {
+                display: block;
+
+                .title {
+                    text-align: center;
+                }
+
+                .images {
+                    display: none;
                 }
             }
         }

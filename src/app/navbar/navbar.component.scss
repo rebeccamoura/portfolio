@@ -6,11 +6,10 @@
     .navbar-wrapper {
         padding-top: 50px;
 
-        &.on {}
-
         .menu-toggle {
             display: none;
             height: 13px;
+            cursor: pointer;
 
             .one, .two, .three {
                 width: 20px;
@@ -40,7 +39,7 @@
             }
         }
 
-        .navbar {
+        .list-wrapper {
             .list {
                 list-style: none;
                 display: flex;
@@ -129,7 +128,7 @@
                 }
             }
 
-            .navbar {
+            .list-wrapper {
                 display: none;
             }
 
@@ -144,7 +143,7 @@
                 left: 0;
                 background-color: var(--bg);
     
-                .navbar {
+                .list-wrapper {
                     position: absolute;
                     top: 50%;
                     left: 50%;
@@ -183,4 +182,14 @@
 
 .d-block {
     display: block !important;
+}
+
+@media screen and (min-width: 921px) {
+    .navbar {
+        width: 100vw;
+        height: 130px;
+        background-color: var(--bg);
+        position: fixed;
+        z-index: 999;
+    }
 }
