@@ -9,8 +9,6 @@
         .home-header {
             display: flex;
             .title {
-                font-size: 10rem;
-
                 span {
                     font-weight: normal;
                 }
@@ -109,8 +107,6 @@
 
             .home-header {
                 .title {
-                    font-size: 7rem;
-
                     &::after {
                         top: 144px;
                     }
@@ -129,8 +125,6 @@
         .container {
             .home-header {
                 .title {
-                    font-size: 4rem;
-
                     &::after {
                         top: 111px;
                     }

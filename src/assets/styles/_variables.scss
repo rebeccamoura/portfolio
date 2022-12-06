@@ -1,6 +1,6 @@
 @import '../styles/fonts';
 
-$font-family: 'Poppins', sans-serif;
+// colors
 
 :root {
     --pri: #FCBA40;
@@ -17,3 +17,7 @@ $font-family: 'Poppins', sans-serif;
     --onbg: #F6F6F6;
     --onbg-variant: lightgrey;
 }
+
+// texts
+
+$font-family: 'Poppins', sans-serif;

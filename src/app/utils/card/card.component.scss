@@ -5,10 +5,10 @@
     position: relative;
 
     .image {
-        width: 300px;
-        height: 200px;
-        background-color: royalblue;
-        margin-bottom: 30px;
+        width: 100%;
+        height: 100%;
+        max-width: 300px;
+        max-height: 200px;
         border-radius: 8px;
     }
 
@@ -21,6 +21,7 @@
         background-color: rgba(0, 0, 0, 0.445);
         text-decoration: none;
         text-align: center;
+        border-radius: 8px;
         opacity: 0;
         transition: opacity .3s ease;
 
