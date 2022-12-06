@@ -1,0 +1,17 @@
+@import '../../assets/styles/utils';
+@import '../../assets/styles/variables';
+
+.footer {
+    background-color: var(--onbg);
+
+    .author {
+        color: var(--bg);
+        font-size: 1.8rem;
+        text-align: center;
+        padding: 60px;
+        
+        span {
+            font-weight: bold;
+        }
+    }
+}

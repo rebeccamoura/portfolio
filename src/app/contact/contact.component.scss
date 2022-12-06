@@ -55,18 +55,13 @@
                 text-transform: uppercase;
             }
 
-            .social-media-wrapper {
-                .social-media {
-                    &:first-child {
-                        margin-right: 10px;
-                    }
-                }
-
+            .social-media-wrapper {                
                 .email {
                     display: flex;
                     font-size: 1.8rem;
                     font-weight: bold;
                     align-items: center;
+                    justify-content: center;
                     margin-top: 10px;
                     
                     p {
@@ -87,6 +82,24 @@
 
                 .or {
                     margin-top: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .contact {
+        .container {
+            .content-wrapper {
+                .social-media-wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    a {
+                        align-self: center;
+                    }
                 }
             }
         }
