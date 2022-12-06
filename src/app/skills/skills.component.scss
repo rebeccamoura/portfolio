@@ -6,14 +6,13 @@
     background-color: var(--pri);
     width: 100vw;
     position: relative;
-    left: -142px;
-    margin-top: 26px;
+    margin-top: 50px;
 
     .container {
         .skills-header {
             .title {
                 font-size: 10rem;
-                padding: 30px 0 0;
+                padding: 30px 0;
                 text-align: center;
             }
         }
@@ -23,9 +22,9 @@
             flex-wrap: wrap;
             justify-content: center;
             padding-bottom: 70px;
+            gap: 40px;
 
             .icon-wrapper {
-                margin: 40px 40px 0 0;
                 transition: transform .3s ease;
 
                 .icon-label {
@@ -40,3 +39,34 @@
     }
 }
 
+@media screen and (max-width: 730px) {
+    .skills {
+        .container {
+            .skills-header {
+                .title {
+                    font-size: 7rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 502px) {
+    .skills {
+        .container {
+            .skills-header {
+                .title {
+                    font-size: 4rem;
+                }
+            }
+
+            .skills-wrapper {
+                .icon-wrapper {
+                    .icon {
+                        width: 100px;
+                    }
+                }
+            }
+        }
+    }
+}
