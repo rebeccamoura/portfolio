@@ -1,0 +1,94 @@
+@charset "UTF-8";
+@import '../../assets/styles/utils';
+@import '../../assets/styles/variables';
+
+.contact {
+    background-color: var(--pri-alt);
+
+    .container {
+        padding: 0 0 70px;
+
+        .contact-header {
+            padding: 30px 0;
+        }
+
+        .content-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            
+            .contact-form {
+                display: flex;
+                flex-direction: column;
+
+                .input, .content {
+                    border-bottom: 3px solid var(--onbg);
+                    background-color: transparent;
+                    width: 300px;
+                    padding: 5px 10px;
+                    font-family: $font-family;
+                    margin-top: 30px;
+                }
+
+                .content {
+                    height: 100px;
+                    resize: none;
+                }
+
+                .btn {
+                    font-family: $font-family;
+                    font-size: 1.8rem;
+                    margin-top: 40px;
+                    background-color: var(--pri-alt);
+                    cursor: pointer;
+
+                    &:hover {
+                        color: var(--pri-alt);
+                        background-color: var(--onbg);
+                    }
+                }
+            }
+
+            .or {
+                font-size: 10rem;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+
+            .social-media-wrapper {
+                .social-media {
+                    &:first-child {
+                        margin-right: 10px;
+                    }
+                }
+
+                .email {
+                    display: flex;
+                    font-size: 1.8rem;
+                    font-weight: bold;
+                    align-items: center;
+                    margin-top: 10px;
+                    
+                    p {
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1160px) {
+    .contact {
+        .container {
+            .content-wrapper {
+                display: flex;
+                flex-direction: column;
+
+                .or {
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}
