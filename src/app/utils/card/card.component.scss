@@ -1,0 +1,40 @@
+@charset "UTF-8";
+@import '../../../assets/styles/variables';
+
+.card {
+    position: relative;
+
+    .image {
+        width: 300px;
+        height: 200px;
+        background-color: royalblue;
+        margin-bottom: 30px;
+        border-radius: 8px;
+    }
+
+    .card-link {
+        display: block;
+        position: absolute;
+        width: 300px;
+        height: 200px;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.445);
+        text-decoration: none;
+        text-align: center;
+        opacity: 0;
+        transition: opacity .3s ease;
+
+        &:hover {
+            opacity: 1;
+        }
+
+        .card-title, p {
+            color: var(--bg);
+            font-size: 3rem;
+        }
+
+        .card-title {
+            margin-top: 55px;
+        }
+    }
+}
