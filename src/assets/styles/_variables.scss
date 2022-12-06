@@ -4,10 +4,11 @@
 
 :root {
     --pri: #FCBA40;
+    --pri-alt: #FDD68E;
     --onpri: #005886;
     --bg: #F6F6F6;
     --onbg: #333333;
-    --onbg-variant: grey;
+    --onbg-alt: grey;
 }
 
 :root .dark-theme {
@@ -15,7 +16,7 @@
     --onpri: #FCBA40;
     --bg: #333333;
     --onbg: #F6F6F6;
-    --onbg-variant: lightgrey;
+    --onbg-alt: lightgrey;
 }
 
 // texts
