@@ -28,6 +28,11 @@
                     padding: 5px 10px;
                     font-family: $font-family;
                     margin-top: 30px;
+                    color: var(--onbg-alt);
+
+                    &::placeholder {
+                        color: var(--onbg-alt);
+                    }
                 }
 
                 .content {
@@ -41,6 +46,7 @@
                     margin-top: 40px;
                     background-color: var(--pri-alt);
                     cursor: pointer;
+                    color: var(--onbg);
 
                     &:hover {
                         color: var(--pri-alt);
@@ -56,7 +62,7 @@
             }
 
             .social-media-wrapper {                
-                .email {
+                .email, .curriculo {
                     display: flex;
                     font-size: 1.8rem;
                     font-weight: bold;

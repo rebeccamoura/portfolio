@@ -25,19 +25,19 @@
                     </li>
     
                     <div class="center">
-                        <li class="item">
-                            <a routerLink="/" class="link active" (click)="activeMenu($event)">Página inicial</a>
+                        <li class="item initial" (click)="scroll($event)">
+                            <a routerLink="/" class="link active initial" (click)="activeMenu($event)">Página inicial</a>
                         </li>
-                        <li class="item">
-                            <a routerLink="/skills" class="link" (click)="activeMenu($event)">Habilidades</a>
+                        <li class="item skills" (click)="scroll($event)">
+                            <a routerLink="/skills" class="link skills" (click)="activeMenu($event)">Habilidades</a>
                         </li>
-                        <li class="item">
-                            <a routerLink="/projects" class="link" (click)="activeMenu($event)">Projetos</a>
+                        <li class="item projects" (click)="scroll($event)">
+                            <a routerLink="/projects" class="link projects" (click)="activeMenu($event)">Projetos</a>
                         </li>
                     </div>
     
-                    <li class="item">
-                        <a routerLink="/contact" class="btn">Vamos conversar</a>
+                    <li class="item contact-us" (click)="scroll($event)">
+                        <a routerLink="/contact" class="btn contact-us">Vamos conversar</a>
                     </li>
                 </ul>
             </nav>

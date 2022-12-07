@@ -70,9 +70,13 @@
     }
 }
 
-@media screen and (max-width: 1151px) {
+@media screen and (max-width: 1155px) {
     .about-me-wrapper {
         margin: auto;
+
+        .text-wrapper {
+            min-height: unset;
+        }
     }
 }
 
