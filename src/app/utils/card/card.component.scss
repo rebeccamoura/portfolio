@@ -3,19 +3,19 @@
 
 .card {
     position: relative;
+    width: 457px;
+    height: 200px;
 
     .image {
         width: 100%;
         height: 100%;
-        max-width: 300px;
-        max-height: 200px;
         border-radius: 8px;
     }
 
     .card-link {
         display: block;
         position: absolute;
-        width: 300px;
+        width: 457px;
         height: 200px;
         top: 0;
         background-color: rgba(0, 0, 0, 0.445);
