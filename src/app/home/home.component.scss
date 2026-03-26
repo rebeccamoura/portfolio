@@ -8,7 +8,10 @@
 
         .home-header {
             display: flex;
-            .title {
+            .home-title {
+                font-size: 10rem;
+                text-align: center;
+
                 span {
                     font-weight: normal;
                 }
@@ -58,7 +61,7 @@
             .home-header {
                 display: block;
 
-                .title {
+                .home-title {
                     text-align: center;
                 }
 
@@ -74,7 +77,7 @@
     .home {
         .container {
             .home-header {
-                .title {
+                .home-title {
                     margin: 54px auto 0;
 
                     &::after {
@@ -90,7 +93,7 @@
     .home {
         .container {
             .home-header {
-                .title {
+                .home-title {
                     &::after {
                         top: 217px;
                     }
@@ -103,10 +106,12 @@
 @media screen and (max-width: 730px) {
     .home {
         .container {
-            padding: 0;
+            padding: 80px 0 0;
 
             .home-header {
-                .title {
+                .home-title {
+                    font-size: 7rem;
+
                     &::after {
                         top: 144px;
                     }
@@ -120,7 +125,9 @@
     .home {
         .container {
             .home-header {
-                .title {
+                .home-title {
+                    font-size: 4rem;
+
                     &::after {
                         top: 111px;
                     }

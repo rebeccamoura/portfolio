@@ -184,12 +184,26 @@
     display: block !important;
 }
 
-@media screen and (min-width: 921px) {
-    .navbar {
-        width: 100vw;
-        height: 130px;
-        background-color: var(--bg);
-        position: fixed;
-        z-index: 999;
+@media screen and (max-width: 372px) {
+    .container {
+        .navbar-wrapper {
+            .list-wrapper {
+                .list {
+                    .item {
+                        a {
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
+        }
     }
+}
+
+#navbar {
+    width: 100vw;
+    height: 130px;
+    background-color: var(--bg);
+    position: fixed;
+    z-index: 999;
 }

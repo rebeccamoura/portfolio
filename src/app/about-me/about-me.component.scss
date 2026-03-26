@@ -61,11 +61,12 @@
     }
 
     .text-wrapper {
-        padding-top: 40px;
+        padding-top: 15px;
         min-height: 278px;
 
         .text {
             font-size: 1.8rem;
+            white-space: pre-line;
         }
     }
 }
@@ -89,5 +90,11 @@
 @media screen and (max-width: 502px) {
     .about-me-wrapper {
         margin: 20px auto 0;
+
+        .text-wrapper {
+            .text {
+                font-size: 1.4rem;
+            }
+        }
     }
 }

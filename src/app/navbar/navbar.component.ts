@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
+  private _isMobile!: boolean;
+
   constructor() { }
 
   ngOnInit(): void {
+    this._isMobile = window.matchMedia("(max-width: 920px)").matches;
   }
 
   activeMenu(event: any) {
@@ -33,31 +36,23 @@ export class NavbarComponent implements OnInit {
     document.querySelector('.list-wrapper')?.classList.toggle('d-block')
   }
 
-  scroll(event: any) {
-    if (event.target.classList?.contains('initial')) {
+  scroll(event: any, section: string) {
+    if (this._isMobile) {
+      this.menuToggle();
+    }
+
+    if (section === "home") {
       window.scrollTo({
         top: 0,
         behavior: 'smooth'
       });
-
       return;
     }
 
-    if (event.target.classList?.contains('contact-us')) {
-      window.scrollTo({
-        top: 2087,
-        behavior: 'smooth'
-      });
-
-      return;
-    }
-
-    event.target.classList?.contains('skills') ? window.scrollTo({
-      top: 680,
-      behavior: 'smooth'
-    }) : window.scrollTo({
-      top: 1338,
-      behavior: 'smooth'
-    });
+    const sectionToScroll = document.getElementById(section)
+    sectionToScroll?.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    })
   }
 }

@@ -2,11 +2,12 @@
 @import '../../assets/styles/variables';
 @import '../../assets/styles/utils';
 
-.skills {
+#skills {
     background-color: var(--pri-alt);
     width: 100vw;
     position: relative;
     margin-top: 50px;
+    scroll-margin-top: 100px;
 
     .container {
         .skills-header {
@@ -24,9 +25,14 @@
 
             .icon-wrapper {
                 transition: transform .3s ease;
+                text-align: center;
 
                 .icon-label {
                     text-align: center;
+                }
+
+                .icon {
+                    width: 50px;
                 }
 
                 &:hover {
