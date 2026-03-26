@@ -1,0 +1,25 @@
+@import '../styles/fonts';
+
+// colors
+
+:root {
+    --pri: #FCBA40;
+    --pri-alt: #FDD68E;
+    --onpri: #005886;
+    --bg: #F6F6F6;
+    --onbg: #333333;
+    --onbg-alt: grey;
+}
+
+:root .dark-theme {
+    --pri: #005886;
+    --pri-alt: #4682b4;
+    --onpri: #FCBA40;
+    --bg: #333333;
+    --onbg: #F6F6F6;
+    --onbg-alt: lightgrey;
+}
+
+// texts
+
+$font-family: 'Poppins', sans-serif;
